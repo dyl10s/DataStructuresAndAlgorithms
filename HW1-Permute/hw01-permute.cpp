@@ -10,12 +10,11 @@ void perm_helper(string input, string cur){
     if(input.size() > 1) {
         for(int i = 0; i < input.size(); i++){
             string temp = input;
-            stringstream ss;
-            ss << cur << temp[i];
-            perm_helper(temp.erase(i, 1), ss.str());
+            string p = cur + temp[i];
+            perm_helper(temp.erase(i, 1), p);
         }
     }else{
-        cout << cur << input << "\n";
+        cout << cur + input + "\n";
         //count += 1;
     }
 
