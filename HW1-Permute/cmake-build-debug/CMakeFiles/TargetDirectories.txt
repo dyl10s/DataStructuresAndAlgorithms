@@ -1,0 +1,3 @@
+F:/College/DataStructuresAndAlgorithms/HW1-Permute/cmake-build-debug/CMakeFiles/HW1.dir
+F:/College/DataStructuresAndAlgorithms/HW1-Permute/cmake-build-debug/CMakeFiles/edit_cache.dir
+F:/College/DataStructuresAndAlgorithms/HW1-Permute/cmake-build-debug/CMakeFiles/rebuild_cache.dir
