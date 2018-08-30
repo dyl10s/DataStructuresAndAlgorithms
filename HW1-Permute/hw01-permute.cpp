@@ -27,8 +27,6 @@ void permute(const string& input){
 }
 
 int main() {
-    permute("Strohschein");
-    std::cout << "Hello World! \n";
-	std::getchar();
+    permute("POSTED");
     return 0;
 }
