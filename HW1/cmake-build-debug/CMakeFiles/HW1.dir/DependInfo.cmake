@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/dylan/CLionProjects/HW1/SimpleDate.cpp" "/home/dylan/CLionProjects/HW1/cmake-build-debug/CMakeFiles/HW1.dir/SimpleDate.cpp.o"
-  "/home/dylan/CLionProjects/HW1/hw01-permute.cpp" "/home/dylan/CLionProjects/HW1/cmake-build-debug/CMakeFiles/HW1.dir/hw01-permute.cpp.o"
+  "F:/College/DataStructuresAndAlgorithms/HW1/SimpleDate.cpp" "F:/College/DataStructuresAndAlgorithms/HW1/cmake-build-debug/CMakeFiles/HW1.dir/SimpleDate.cpp.obj"
+  "F:/College/DataStructuresAndAlgorithms/HW1/hw01-permute.cpp" "F:/College/DataStructuresAndAlgorithms/HW1/cmake-build-debug/CMakeFiles/HW1.dir/hw01-permute.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

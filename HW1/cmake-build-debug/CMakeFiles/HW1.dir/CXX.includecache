@@ -6,9 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/dylan/CLionProjects/HW1/SimpleDate.h
+F:/College/DataStructuresAndAlgorithms/HW1/SimpleDate.cpp
+stdexcept
+-
+SimpleDate.h
+F:/College/DataStructuresAndAlgorithms/HW1/SimpleDate.h
 
-/home/dylan/CLionProjects/HW1/hw01-permute.cpp
+F:/College/DataStructuresAndAlgorithms/HW1/SimpleDate.h
+
+F:/College/DataStructuresAndAlgorithms/HW1/hw01-permute.cpp
 iostream
 -
 sstream
@@ -16,5 +22,5 @@ sstream
 string
 -
 SimpleDate.h
-/home/dylan/CLionProjects/HW1/SimpleDate.h
+F:/College/DataStructuresAndAlgorithms/HW1/SimpleDate.h
 
