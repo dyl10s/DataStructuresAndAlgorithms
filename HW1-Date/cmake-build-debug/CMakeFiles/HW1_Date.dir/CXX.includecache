@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+F:/College/DataStructuresAndAlgorithms/HW1-Date/SimpleDate.cpp
+stdexcept
+-
+SimpleDate.h
+F:/College/DataStructuresAndAlgorithms/HW1-Date/SimpleDate.h
+
+F:/College/DataStructuresAndAlgorithms/HW1-Date/SimpleDate.h
+
