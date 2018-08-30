@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dylan/CLionProjects/HW1/SimpleDate.h
+
+/home/dylan/CLionProjects/HW1/hw01-permute.cpp
+iostream
+-
+sstream
+-
+string
+-
+SimpleDate.h
+/home/dylan/CLionProjects/HW1/SimpleDate.h
+
