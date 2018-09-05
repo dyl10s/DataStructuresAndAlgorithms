@@ -7,7 +7,10 @@
 
 
 class SimpleDate {
+    SimpleDate(int day, int month, int year);
 
+    //This is a distructor
+    ~SimpleDate();
 };
 
 
