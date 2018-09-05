@@ -14,7 +14,7 @@ SimpleDate::SimpleDate(int month, int day, int year) {
     this->year = year;
 
     if (!isValidDate(month, day, year)) {
-        throw *new std::invalid_argument("invalid values for fields");
+        throw std::invalid_argument{"invalid values for fields"};
     }
 }
 
@@ -60,25 +60,25 @@ int SimpleDate::daysInYear(int year) const{
 SimpleDate SimpleDate::daysFromNow(int n) const{
 
     if (n == 0) {
-        auto *returnDate = new SimpleDate(month,day,year);
-        return *returnDate;
+        SimpleDate returnDate{month,day,year};
+        return returnDate;
     }
 
-    auto *date = new SimpleDate(month, day, year);
+    SimpleDate date{month, day, year};
 
     if (n < 0) {
-        throw *new std::invalid_argument("n can't be negative");
+        throw std::invalid_argument{"n can't be negative"};
     } else {
-        *date = nextDate();
+        date = nextDate();
         for (int i = 1; i < n; i++) {
-            *date = date->nextDate();
+            date = date.nextDate();
         }
     }
 
-    if (date->getYear() < MIN_YEAR)
-        throw *new std::invalid_argument(("Resulting date is before 1/1/1753"));
+    if (date.getYear() < MIN_YEAR)
+        throw std::invalid_argument{"Resulting date is before 1/1/1753"};
 
-    return *date;
+    return date;
 }
 
 bool SimpleDate::isLeapYear() const{
@@ -117,36 +117,36 @@ const int SimpleDate::daysInMonth(int month, int year) const{
 }
 
 SimpleDate SimpleDate::nextDate() const{
-    auto *next = new SimpleDate(month, day, year);
+    SimpleDate next{month, day, year};
 
     // handle 31-day months
     if (month == 1 || month == 3 || month == 5 || month == 7 ||
         month == 8 || month == 10) {
         if (day < 31) {
-            *next = *new SimpleDate(month, day + 1, year);
+            next = *new SimpleDate(month, day + 1, year);
         } else {
-            *next = *(new SimpleDate(month + 1, 1, year));
+            next = *new SimpleDate(month + 1, 1, year);
         }
     }
 
     // handle 30-day month
     if (month == 4 || month == 6 || month == 9 || month == 11) {
         if (day < 30) {
-            next = new SimpleDate(month, day + 1, year);
+            next = *new SimpleDate(month, day + 1, year);
         } else {
-            next = new SimpleDate(month + 1, 1, year);
+            next = *new SimpleDate(month + 1, 1, year);
         }
     }
 
     // handle February month
     if (month == 2) {
         if (day < 28) {
-            next = new SimpleDate(month, day + 1, year);
+            next = *new SimpleDate(month, day + 1, year);
         } else {
             if (isLeapYear()) {
-                next = new SimpleDate(month, day + 1, year);
+                next = *new SimpleDate(month, day + 1, year);
             } else {
-                next = new SimpleDate(month + 1, 1, year);
+                next = *new SimpleDate(month + 1, 1, year);
             }
         }
     }
@@ -154,11 +154,11 @@ SimpleDate SimpleDate::nextDate() const{
     // handle December month
     if (month == 12) {
         if (day < 31) {
-            next = new SimpleDate(month, day + 1, year);
+            next = *new SimpleDate(month, day + 1, year);
         } else {
-            next = new SimpleDate(1, 1, year + 1);
+            next = *new SimpleDate(1, 1, year + 1);
         }
     }
 
-    return *next;
+    return next;
 }

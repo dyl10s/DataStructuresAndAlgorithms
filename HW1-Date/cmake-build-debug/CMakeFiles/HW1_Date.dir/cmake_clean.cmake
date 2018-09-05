@@ -1,10 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/HW1_Date.dir/hw01-date.cpp.obj"
-  "CMakeFiles/HW1_Date.dir/SimpleDate.cpp.obj"
+  "CMakeFiles/HW1_Date.dir/hw01-date.cpp.o"
+  "CMakeFiles/HW1_Date.dir/SimpleDate.cpp.o"
   "HW1_Date.pdb"
-  "HW1_Date.exe"
-  "HW1_Date.exe.manifest"
-  "libHW1_Date.dll.a"
+  "HW1_Date"
 )
 
 # Per-language clean rules from dependency scanning.
