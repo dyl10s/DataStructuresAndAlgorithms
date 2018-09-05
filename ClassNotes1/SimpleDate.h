@@ -7,6 +7,8 @@
 
 
 class SimpleDate {
+
+public:
     SimpleDate(int day, int month, int year);
 
     //This is a distructor
