@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dylan/CLionProjects/DataStructuresAndAlgorithms/Notes/ClassNotes1/SimpleDate.cpp
+iostream
+-
+SimpleDate.h
+/home/dylan/CLionProjects/DataStructuresAndAlgorithms/Notes/ClassNotes1/SimpleDate.h
+
+/home/dylan/CLionProjects/DataStructuresAndAlgorithms/Notes/ClassNotes1/SimpleDate.h
+
+/home/dylan/CLionProjects/DataStructuresAndAlgorithms/Notes/ClassNotes1/main.cpp
+iostream
+-
+SimpleDate.h
+/home/dylan/CLionProjects/DataStructuresAndAlgorithms/Notes/ClassNotes1/SimpleDate.h
+

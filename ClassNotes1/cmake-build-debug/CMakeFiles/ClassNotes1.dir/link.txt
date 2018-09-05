@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/ClassNotes1.dir/main.cpp.o CMakeFiles/ClassNotes1.dir/SimpleDate.cpp.o  -o ClassNotes1 

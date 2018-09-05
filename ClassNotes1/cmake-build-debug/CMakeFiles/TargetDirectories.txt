@@ -1,3 +1,0 @@
-/home/dylan/CLionProjects/DataStructuresAndAlgorithms/ClassNotes1/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/dylan/CLionProjects/DataStructuresAndAlgorithms/ClassNotes1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/dylan/CLionProjects/DataStructuresAndAlgorithms/ClassNotes1/cmake-build-debug/CMakeFiles/ClassNotes1.dir
