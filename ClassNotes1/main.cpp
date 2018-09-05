@@ -2,9 +2,7 @@
 #include "SimpleDate.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-
-    //New way to create object
+    //New way to create object no need for new keyword use {}
     //d2 has a shorter lifetime and the destructor will be called first.
     SimpleDate d1{9, 5, 2018};
 
@@ -13,4 +11,5 @@ int main() {
     }//d2 destructor gets called here
 
     return 0;
+
 }//d1 destructor gets called here
