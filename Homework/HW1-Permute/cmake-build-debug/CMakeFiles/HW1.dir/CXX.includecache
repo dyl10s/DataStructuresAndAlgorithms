@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/dylan/CLionProjects/DataStructuresAndAlgorithms/HW1-Permute/hw01-permute.cpp
+/home/dylan/CLionProjects/DataStructuresAndAlgorithms/Homework/HW1-Permute/hw01-permute.cpp
 iostream
 -
 sstream
