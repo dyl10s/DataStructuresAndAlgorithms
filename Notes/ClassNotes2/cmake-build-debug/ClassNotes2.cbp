@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/dylan/CLionProjects/DataStructuresAndAlgorithms/Notes/ClassNotes2/MyClass.cpp">
+			<Option target="ClassNotes2"/>
+		</Unit>
+		<Unit filename="/home/dylan/CLionProjects/DataStructuresAndAlgorithms/Notes/ClassNotes2/MyClass.h">
+			<Option target="ClassNotes2"/>
+		</Unit>
 		<Unit filename="/home/dylan/CLionProjects/DataStructuresAndAlgorithms/Notes/ClassNotes2/main.cpp">
 			<Option target="ClassNotes2"/>
 		</Unit>
