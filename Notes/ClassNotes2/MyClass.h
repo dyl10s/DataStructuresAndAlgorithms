@@ -8,6 +8,9 @@
 
 class MyClass {
 
+public:
+    void sample(int a, MyClass b, int& c);
+
 };
 
 
