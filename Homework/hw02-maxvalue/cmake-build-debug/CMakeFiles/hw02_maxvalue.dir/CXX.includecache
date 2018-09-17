@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dylan/CLionProjects/DataStructuresAndAlgorithms/Homework/hw02-maxvalue/hw02-maxvalue.cpp
+vector
+-
+iostream
+-
+fstream
+-
+

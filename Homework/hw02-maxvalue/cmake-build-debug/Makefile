@@ -123,32 +123,32 @@ hw02_maxvalue/fast:
 	$(MAKE) -f CMakeFiles/hw02_maxvalue.dir/build.make CMakeFiles/hw02_maxvalue.dir/build
 .PHONY : hw02_maxvalue/fast
 
-main.o: main.cpp.o
+hw02-maxvalue.o: hw02-maxvalue.cpp.o
 
-.PHONY : main.o
+.PHONY : hw02-maxvalue.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/hw02_maxvalue.dir/build.make CMakeFiles/hw02_maxvalue.dir/main.cpp.o
-.PHONY : main.cpp.o
+hw02-maxvalue.cpp.o:
+	$(MAKE) -f CMakeFiles/hw02_maxvalue.dir/build.make CMakeFiles/hw02_maxvalue.dir/hw02-maxvalue.cpp.o
+.PHONY : hw02-maxvalue.cpp.o
 
-main.i: main.cpp.i
+hw02-maxvalue.i: hw02-maxvalue.cpp.i
 
-.PHONY : main.i
+.PHONY : hw02-maxvalue.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/hw02_maxvalue.dir/build.make CMakeFiles/hw02_maxvalue.dir/main.cpp.i
-.PHONY : main.cpp.i
+hw02-maxvalue.cpp.i:
+	$(MAKE) -f CMakeFiles/hw02_maxvalue.dir/build.make CMakeFiles/hw02_maxvalue.dir/hw02-maxvalue.cpp.i
+.PHONY : hw02-maxvalue.cpp.i
 
-main.s: main.cpp.s
+hw02-maxvalue.s: hw02-maxvalue.cpp.s
 
-.PHONY : main.s
+.PHONY : hw02-maxvalue.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/hw02_maxvalue.dir/build.make CMakeFiles/hw02_maxvalue.dir/main.cpp.s
-.PHONY : main.cpp.s
+hw02-maxvalue.cpp.s:
+	$(MAKE) -f CMakeFiles/hw02_maxvalue.dir/build.make CMakeFiles/hw02_maxvalue.dir/hw02-maxvalue.cpp.s
+.PHONY : hw02-maxvalue.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... hw02_maxvalue"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... hw02-maxvalue.o"
+	@echo "... hw02-maxvalue.i"
+	@echo "... hw02-maxvalue.s"
 .PHONY : help
 
 

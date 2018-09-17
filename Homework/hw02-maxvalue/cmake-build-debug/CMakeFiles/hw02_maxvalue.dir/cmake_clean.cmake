@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/hw02_maxvalue.dir/main.cpp.o"
+  "CMakeFiles/hw02_maxvalue.dir/hw02-maxvalue.cpp.o"
   "hw02_maxvalue.pdb"
   "hw02_maxvalue"
 )

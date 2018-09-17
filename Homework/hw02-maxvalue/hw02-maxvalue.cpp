@@ -11,7 +11,24 @@ using namespace std;
  */
 int maxPlus(vector<int> values) {
 
-    return -1; /* replace this */
+    int highNum1 = 0;
+    int highNum2 = 0;
+
+    for(auto n : values){
+        if(highNum1 < n){
+
+            if(highNum1 > highNum2){
+                highNum2 = highNum1;
+            }
+
+            highNum1 = n;
+
+        }else if(highNum2 < n){
+            highNum2 = n;
+        }
+    }
+
+    return highNum1 + highNum2;
 }
 
 /**
@@ -21,7 +38,20 @@ int maxPlus(vector<int> values) {
  */
 int maxMinus(vector<int> values) {
 
-    return -1; /* replace this */
+    int highNum1 = 0;
+    int lowNum1 = values[0];
+
+    for(auto n : values){
+        if(highNum1 < n){
+
+            highNum1 = n;
+
+        }else if(lowNum1 > n){
+            lowNum1 = n;
+        }
+    }
+
+    return highNum1 - lowNum1;
 }
 
 /**
@@ -31,7 +61,24 @@ int maxMinus(vector<int> values) {
  */
 int maxProduct(vector<int> values) {
 
-    return -1; /* replace this */
+    int highNum1 = 0;
+    int highNum2 = 0;
+
+    for(auto n : values){
+        if(highNum1 < n){
+
+            if(highNum1 > highNum2){
+                highNum2 = highNum1;
+            }
+
+            highNum1 = n;
+
+        }else if(highNum2 < n){
+            highNum2 = n;
+        }
+    }
+
+    return highNum1 * highNum2;
 }
 
 /**
@@ -41,7 +88,21 @@ int maxProduct(vector<int> values) {
  */
 int maxDivide(vector<int> values) {
 
-    return -1; /* replace this */
+
+    int highNum1 = 0;
+    int lowNum1 = values[0];
+
+    for(auto n : values){
+        if(highNum1 < n){
+
+            highNum1 = n;
+
+        }else if(lowNum1 > n){
+            lowNum1 = n;
+        }
+    }
+
+    return highNum1 / lowNum1;
 }
 
 int main(int argc, char* argv[]) {

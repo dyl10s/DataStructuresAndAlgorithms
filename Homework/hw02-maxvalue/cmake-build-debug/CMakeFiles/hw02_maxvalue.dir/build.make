@@ -57,27 +57,27 @@ include CMakeFiles/hw02_maxvalue.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/hw02_maxvalue.dir/flags.make
 
-CMakeFiles/hw02_maxvalue.dir/main.cpp.o: CMakeFiles/hw02_maxvalue.dir/flags.make
-CMakeFiles/hw02_maxvalue.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dylan/CLionProjects/DataStructuresAndAlgorithms/Homework/hw02-maxvalue/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hw02_maxvalue.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hw02_maxvalue.dir/main.cpp.o -c /home/dylan/CLionProjects/DataStructuresAndAlgorithms/Homework/hw02-maxvalue/main.cpp
+CMakeFiles/hw02_maxvalue.dir/hw02-maxvalue.cpp.o: CMakeFiles/hw02_maxvalue.dir/flags.make
+CMakeFiles/hw02_maxvalue.dir/hw02-maxvalue.cpp.o: ../hw02-maxvalue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dylan/CLionProjects/DataStructuresAndAlgorithms/Homework/hw02-maxvalue/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/hw02_maxvalue.dir/hw02-maxvalue.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/hw02_maxvalue.dir/hw02-maxvalue.cpp.o -c /home/dylan/CLionProjects/DataStructuresAndAlgorithms/Homework/hw02-maxvalue/hw02-maxvalue.cpp
 
-CMakeFiles/hw02_maxvalue.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hw02_maxvalue.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dylan/CLionProjects/DataStructuresAndAlgorithms/Homework/hw02-maxvalue/main.cpp > CMakeFiles/hw02_maxvalue.dir/main.cpp.i
+CMakeFiles/hw02_maxvalue.dir/hw02-maxvalue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hw02_maxvalue.dir/hw02-maxvalue.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dylan/CLionProjects/DataStructuresAndAlgorithms/Homework/hw02-maxvalue/hw02-maxvalue.cpp > CMakeFiles/hw02_maxvalue.dir/hw02-maxvalue.cpp.i
 
-CMakeFiles/hw02_maxvalue.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hw02_maxvalue.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/CLionProjects/DataStructuresAndAlgorithms/Homework/hw02-maxvalue/main.cpp -o CMakeFiles/hw02_maxvalue.dir/main.cpp.s
+CMakeFiles/hw02_maxvalue.dir/hw02-maxvalue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hw02_maxvalue.dir/hw02-maxvalue.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dylan/CLionProjects/DataStructuresAndAlgorithms/Homework/hw02-maxvalue/hw02-maxvalue.cpp -o CMakeFiles/hw02_maxvalue.dir/hw02-maxvalue.cpp.s
 
 # Object files for target hw02_maxvalue
 hw02_maxvalue_OBJECTS = \
-"CMakeFiles/hw02_maxvalue.dir/main.cpp.o"
+"CMakeFiles/hw02_maxvalue.dir/hw02-maxvalue.cpp.o"
 
 # External object files for target hw02_maxvalue
 hw02_maxvalue_EXTERNAL_OBJECTS =
 
-hw02_maxvalue: CMakeFiles/hw02_maxvalue.dir/main.cpp.o
+hw02_maxvalue: CMakeFiles/hw02_maxvalue.dir/hw02-maxvalue.cpp.o
 hw02_maxvalue: CMakeFiles/hw02_maxvalue.dir/build.make
 hw02_maxvalue: CMakeFiles/hw02_maxvalue.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dylan/CLionProjects/DataStructuresAndAlgorithms/Homework/hw02-maxvalue/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable hw02_maxvalue"

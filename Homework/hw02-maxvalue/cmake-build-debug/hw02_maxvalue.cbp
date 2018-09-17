@@ -84,7 +84,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/dylan/CLionProjects/DataStructuresAndAlgorithms/Homework/hw02-maxvalue/main.cpp">
+		<Unit filename="/home/dylan/CLionProjects/DataStructuresAndAlgorithms/Homework/hw02-maxvalue/hw02-maxvalue.cpp">
 			<Option target="hw02_maxvalue"/>
 		</Unit>
 		<Unit filename="/home/dylan/CLionProjects/DataStructuresAndAlgorithms/Homework/hw02-maxvalue/CMakeLists.txt">
