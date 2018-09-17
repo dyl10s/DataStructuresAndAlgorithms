@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/HW1.dir/hw01-permute.cpp.o"
+  "CMakeFiles/HW1.dir/hw01-permute.cpp.obj"
   "HW1.pdb"
-  "HW1"
+  "HW1.exe"
+  "HW1.exe.manifest"
+  "libHW1.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.
