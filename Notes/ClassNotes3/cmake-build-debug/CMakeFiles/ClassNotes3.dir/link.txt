@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/ClassNotes3.dir/main.cpp.o  -o ClassNotes3 

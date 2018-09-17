@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dylan/CLionProjects/DataStructuresAndAlgorithms/Notes/LinkedList/GVSingleLinkedList.h
+memory
+-
+
+/home/dylan/CLionProjects/DataStructuresAndAlgorithms/Notes/LinkedList/main.cpp
+iostream
+-
+iomanip
+-
+GVSingleLinkedList.h
+/home/dylan/CLionProjects/DataStructuresAndAlgorithms/Notes/LinkedList/GVSingleLinkedList.h
+
