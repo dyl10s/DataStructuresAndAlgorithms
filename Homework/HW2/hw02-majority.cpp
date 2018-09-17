@@ -27,8 +27,14 @@ int majority (vector<int> a)
     }
 
     if(a.size() % 2 != 0){
-        newList.push_back(a[a.size() - 1]);
+        for(int num = 0; num < a.size() -1; num+=1) {
+            if (a[num] == a[a.size() - 1]) {
+                newList.push_back(a[num]);
+                break;
+            }
+        }
     }
+
 
     return majority(newList);
     /* write your code here, based on the detailed explanation of exercise 2.26 */

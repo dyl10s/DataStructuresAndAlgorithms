@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-F:/College/DataStructuresAndAlgorithms/HW2/hw02-majority.cpp
+/home/dylan/CLionProjects/DataStructuresAndAlgorithms/Homework/HW2/hw02-majority.cpp
 iostream
 -
 vector

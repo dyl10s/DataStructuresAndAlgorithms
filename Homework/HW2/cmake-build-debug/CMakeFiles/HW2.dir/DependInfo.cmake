@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "F:/College/DataStructuresAndAlgorithms/HW2/hw02-majority.cpp" "F:/College/DataStructuresAndAlgorithms/HW2/cmake-build-debug/CMakeFiles/HW2.dir/hw02-majority.cpp.obj"
+  "/home/dylan/CLionProjects/DataStructuresAndAlgorithms/Homework/HW2/hw02-majority.cpp" "/home/dylan/CLionProjects/DataStructuresAndAlgorithms/Homework/HW2/cmake-build-debug/CMakeFiles/HW2.dir/hw02-majority.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
