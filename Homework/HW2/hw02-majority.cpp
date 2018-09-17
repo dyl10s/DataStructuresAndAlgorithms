@@ -26,15 +26,20 @@ int majority (vector<int> a)
         }
     }
 
+
+    int counter = 0;
+
     if(a.size() % 2 != 0){
-        for(int num = 0; num < a.size() -1; num+=1) {
+        for(int num = 0; num < a.size(); num+=1) {
             if (a[num] == a[a.size() - 1]) {
-                newList.push_back(a[num]);
-                break;
+                counter += 1;
             }
         }
     }
 
+    if ((double)counter / (a.size() - 1) >= .5){
+        newList.push_back(a[a.size() - 1]);
+    }
 
     return majority(newList);
     /* write your code here, based on the detailed explanation of exercise 2.26 */
