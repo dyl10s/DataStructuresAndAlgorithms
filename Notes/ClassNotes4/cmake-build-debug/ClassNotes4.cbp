@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/dylan/CLionProjects/DataStructuresAndAlgorithms/Notes/ClassNotes4/Sample.cpp">
+			<Option target="ClassNotes4"/>
+		</Unit>
+		<Unit filename="/home/dylan/CLionProjects/DataStructuresAndAlgorithms/Notes/ClassNotes4/Sample.h">
+			<Option target="ClassNotes4"/>
+		</Unit>
 		<Unit filename="/home/dylan/CLionProjects/DataStructuresAndAlgorithms/Notes/ClassNotes4/main.cpp">
 			<Option target="ClassNotes4"/>
 		</Unit>

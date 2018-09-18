@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/dylan/CLionProjects/DataStructuresAndAlgorithms/Notes/ClassNotes4/Sample.cpp" "/home/dylan/CLionProjects/DataStructuresAndAlgorithms/Notes/ClassNotes4/cmake-build-debug/CMakeFiles/ClassNotes4.dir/Sample.cpp.o"
   "/home/dylan/CLionProjects/DataStructuresAndAlgorithms/Notes/ClassNotes4/main.cpp" "/home/dylan/CLionProjects/DataStructuresAndAlgorithms/Notes/ClassNotes4/cmake-build-debug/CMakeFiles/ClassNotes4.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

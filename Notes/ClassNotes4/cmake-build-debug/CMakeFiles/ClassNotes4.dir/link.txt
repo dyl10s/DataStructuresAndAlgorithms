@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/ClassNotes4.dir/main.cpp.o  -o ClassNotes4 
+/usr/bin/c++  -g   CMakeFiles/ClassNotes4.dir/main.cpp.o CMakeFiles/ClassNotes4.dir/Sample.cpp.o  -o ClassNotes4 

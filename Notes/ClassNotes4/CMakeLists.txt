@@ -3,4 +3,4 @@ project(ClassNotes4)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(ClassNotes4 main.cpp)
+add_executable(ClassNotes4 main.cpp Sample.cpp Sample.h)

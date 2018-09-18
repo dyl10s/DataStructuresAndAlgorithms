@@ -123,6 +123,33 @@ ClassNotes4/fast:
 	$(MAKE) -f CMakeFiles/ClassNotes4.dir/build.make CMakeFiles/ClassNotes4.dir/build
 .PHONY : ClassNotes4/fast
 
+Sample.o: Sample.cpp.o
+
+.PHONY : Sample.o
+
+# target to build an object file
+Sample.cpp.o:
+	$(MAKE) -f CMakeFiles/ClassNotes4.dir/build.make CMakeFiles/ClassNotes4.dir/Sample.cpp.o
+.PHONY : Sample.cpp.o
+
+Sample.i: Sample.cpp.i
+
+.PHONY : Sample.i
+
+# target to preprocess a source file
+Sample.cpp.i:
+	$(MAKE) -f CMakeFiles/ClassNotes4.dir/build.make CMakeFiles/ClassNotes4.dir/Sample.cpp.i
+.PHONY : Sample.cpp.i
+
+Sample.s: Sample.cpp.s
+
+.PHONY : Sample.s
+
+# target to generate assembly for a file
+Sample.cpp.s:
+	$(MAKE) -f CMakeFiles/ClassNotes4.dir/build.make CMakeFiles/ClassNotes4.dir/Sample.cpp.s
+.PHONY : Sample.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ClassNotes4"
+	@echo "... Sample.o"
+	@echo "... Sample.i"
+	@echo "... Sample.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
