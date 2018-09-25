@@ -11,24 +11,22 @@ using namespace std;
  */
 int maxPlus(vector<int> values) {
 
-    int highNum1 = 0;
-    int highNum2 = 0;
+    double ans = 0;
+    int max = values[0];
 
-    for(auto n : values){
-        if(highNum1 < n){
+    for(auto n: values){
 
-            if(highNum1 > highNum2){
-                highNum2 = highNum1;
-            }
-
-            highNum1 = n;
-
-        }else if(highNum2 < n){
-            highNum2 = n;
+        if(max < n){
+            max = n;
         }
+
+        if(ans < (double)n + max){
+            ans = (double)n + max;
+        }
+
     }
 
-    return highNum1 + highNum2;
+    return ans;
 }
 
 /**
@@ -38,20 +36,22 @@ int maxPlus(vector<int> values) {
  */
 int maxMinus(vector<int> values) {
 
-    int highNum1 = 0;
-    int lowNum1 = values[0];
+    double ans = 0;
+    int min = values[0];
 
-    for(auto n : values){
-        if(highNum1 < n){
+    for(auto n: values){
 
-            highNum1 = n;
-
-        }else if(lowNum1 > n){
-            lowNum1 = n;
+        if(min > n){
+            min = n;
         }
+
+        if(ans < (double)n - min){
+            ans = (double)n - min;
+        }
+
     }
 
-    return highNum1 - lowNum1;
+    return ans;
 }
 
 /**
@@ -61,24 +61,22 @@ int maxMinus(vector<int> values) {
  */
 int maxProduct(vector<int> values) {
 
-    int highNum1 = 0;
-    int highNum2 = 0;
+    double ans = 0;
+    int max = values[0];
 
-    for(auto n : values){
-        if(highNum1 < n){
+    for(auto n: values){
 
-            if(highNum1 > highNum2){
-                highNum2 = highNum1;
-            }
-
-            highNum1 = n;
-
-        }else if(highNum2 < n){
-            highNum2 = n;
+        if(max < n){
+            max = n;
         }
+
+        if(ans < (double)n * max){
+            ans = (double)n * max;
+        }
+
     }
 
-    return highNum1 * highNum2;
+    return ans;
 }
 
 /**
@@ -86,28 +84,30 @@ int maxProduct(vector<int> values) {
  * @param values positive input values
  * @return the maximum result
  */
-int maxDivide(vector<int> values) {
+double maxDivide(vector<int> values) {
 
+    double ans = 0;
+    int min = values[0];
 
-    int highNum1 = 0;
-    int lowNum1 = values[0];
+    for(auto n: values){
 
-    for(auto n : values){
-        if(highNum1 < n){
-
-            highNum1 = n;
-
-        }else if(lowNum1 > n){
-            lowNum1 = n;
+        if(min > n){
+            min = n;
         }
+
+        if(ans < (double)n / min){
+            ans = (double)n / min;
+        }
+
     }
 
-    return highNum1 / lowNum1;
+    return ans;
+
 }
 
 int main(int argc, char* argv[]) {
     //Use clog for your debugging output
-    clog << "This program runs from " << argv[0] << endl;
+    //clog << "This program runs from " << argv[0] << endl;
     if (argc < 2) {
         //Use cerr for error messages
         cerr << "Missing filename argument" << endl;
@@ -123,10 +123,10 @@ int main(int argc, char* argv[]) {
         inputfile >> num_test;  // read the number of test cases
 
         //Use clog for your debugging
-        clog << "Number of test cases: " << num_test << endl;
+        //clog << "Number of test cases: " << num_test << endl;
         for (int k = 0; k < num_test; k++) {
             inputfile >> num_items_per_test;
-            clog << "Test " << k << " has " << num_test << " data items" << endl;
+            //clog << "Test " << k << " has " << num_test << " data items" << endl;
             testVector.clear();
             for (int m = 0; m < num_items_per_test; m++) {
                 int val;

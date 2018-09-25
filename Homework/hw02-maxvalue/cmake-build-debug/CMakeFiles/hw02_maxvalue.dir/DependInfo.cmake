@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/dylan/CLionProjects/DataStructuresAndAlgorithms/Homework/hw02-maxvalue/hw02-maxvalue.cpp" "/home/dylan/CLionProjects/DataStructuresAndAlgorithms/Homework/hw02-maxvalue/cmake-build-debug/CMakeFiles/hw02_maxvalue.dir/hw02-maxvalue.cpp.o"
+  "F:/College/DataStructuresAndAlgorithms/Homework/hw02-maxvalue/hw02-maxvalue.cpp" "F:/College/DataStructuresAndAlgorithms/Homework/hw02-maxvalue/cmake-build-debug/CMakeFiles/hw02_maxvalue.dir/hw02-maxvalue.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
