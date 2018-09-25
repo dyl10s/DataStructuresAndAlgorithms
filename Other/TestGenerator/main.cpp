@@ -20,7 +20,7 @@ int main() {
             for(auto testNums = 0; testNums < curLength; testNums++){
                 myfile << rand() % 100;
                 if(testNums != curLength - 1) {
-                    myFile << " ";
+                    myfile << " ";
                 }
             }
             myfile << endl;
