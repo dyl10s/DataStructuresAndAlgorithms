@@ -51,12 +51,15 @@ namespace gv {
          * @return the number of items
          */
         int size() const {
+
             int count = 0;
+
             shared_ptr<Node> testNode = this->head;
             while(testNode != nullptr){
                 count+=1;
                 testNode = testNode->next;
             }
+
             return count;
         }
 
@@ -73,9 +76,11 @@ namespace gv {
          * @throw length_error when the list is empty
          */
         const T& front() const {
+
             if(this->head == nullptr){
                 throw length_error("The list is empty");
             }
+
             return this->head->data;
         };
 
@@ -101,7 +106,7 @@ namespace gv {
          */
         void push_front(const T& x) {
 
-            shared_ptr<Node> newData {};
+            shared_ptr<Node> newData = make_shared<Node>();
             newData->data = x;
 
             if(is_empty()){
@@ -124,7 +129,7 @@ namespace gv {
          */
         void push_back(const T& x) {
 
-            shared_ptr<Node> newData {};
+            shared_ptr<Node> newData = make_shared<Node>();;
             newData->data = x;
 
             if(is_empty()){
@@ -135,13 +140,19 @@ namespace gv {
 
             newData->next = nullptr;
 
-            if(auto prev = newData->prev.lock()){
-                if( auto tail = this->tail.lock()){
+            if(auto tail = this->tail.lock()){
+                tail->next = newData;
+
+                if(auto prev = newData->prev.lock()){
                     prev = tail;
                 }
+
+                tail = newData;
             }
 
-            this->tail = newData;
+
+
+
         }
 
         /**
@@ -163,7 +174,7 @@ namespace gv {
             }
 
             int count = 0;
-            shared_ptr<Node> insertPoint {};
+            shared_ptr<Node> insertPoint = make_shared<Node>();;
             Node newNode;
             newNode.data = x;
 
@@ -194,12 +205,13 @@ namespace gv {
          * @throw out_of_range exception when pos is invalid (negative or >= list size)
          */
         void remove_from (int pos) {
-            if(pos < 0 || pos > size()){
+
+            if(pos < 0 || pos >= size()){
                 throw out_of_range("pos is invalid (negative or larger than list size)");
             }
 
             int count = 0;
-            shared_ptr<Node> insertPoint;
+            shared_ptr<Node> insertPoint = make_shared<Node>();;
 
             insertPoint = this->head;
 
@@ -223,12 +235,13 @@ namespace gv {
          * @throw out_of_range exception when pos is invalid (negative or >= list size)
          */
         const T& at (int pos) const {
-            if(pos < 0 || pos > size()){
+
+            if(pos < 0 || pos >= size()){
                 throw out_of_range("pos is invalid (negative or larger than list size)");
             }
 
             int count = 0;
-            shared_ptr<Node> insertPoint;
+            shared_ptr<Node> insertPoint = make_shared<Node>();;
 
             insertPoint = this->head;
 
@@ -244,6 +257,16 @@ namespace gv {
          * @throw length_error when the list is empty
          */
         void pop_front() {
+
+            if(is_empty()){
+                throw length_error("The list is empty");
+            }
+
+            this->head = this->head->next;
+            if(auto prev = this->head->prev.lock()){
+                prev = nullptr;
+            }
+
         }
 
         /**
@@ -251,6 +274,18 @@ namespace gv {
          * @throw length_error when the list is empty
          */
         void pop_back() {
+
+            if(is_empty()){
+                throw length_error("The list is empty");
+            }
+
+            if(auto tail = this->tail.lock()){
+                if(auto prev = tail->prev.lock()){
+                    tail = prev;
+                    prev->next = nullptr;
+                }
+            }
+
         }
         /**
          * Implement self-adjusting list (Problem 3.30b). Search for a given item
@@ -259,6 +294,17 @@ namespace gv {
          * @return true if the item is found, false otherwise
          */
         bool find(const T& val) {
+
+            for(int i = 0; i < size(); i++){
+                if(at(i) == val){
+                    remove_from(i);
+                    push_front(val);
+                    return true;
+                }
+            }
+
+            return false;
+
         }
 
     private:

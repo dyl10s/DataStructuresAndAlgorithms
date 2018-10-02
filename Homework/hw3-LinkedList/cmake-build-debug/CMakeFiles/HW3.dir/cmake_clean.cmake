@@ -1,9 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/HW3.dir/list_tester.cpp.obj"
+  "CMakeFiles/HW3.dir/list_tester.cpp.o"
   "HW3.pdb"
-  "HW3.exe"
-  "HW3.exe.manifest"
-  "libHW3.dll.a"
+  "HW3"
 )
 
 # Per-language clean rules from dependency scanning.
