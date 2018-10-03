@@ -21,6 +21,7 @@ void perm_helper(string input, string cur){
 
 void permute(const string& input){
     perm_helper(input, "");
+    //cout << "Total Number: " << count << "\n";
 }
 
 int main() {

@@ -19,36 +19,28 @@ int majority (vector<int> a)
         return -1;
     }
 
+    int counter = 1;
+
     vector<int> newList;
-    for(int num = 0; num < a.size(); num+=2){
+    for(int num = 0; num < a.size() - 1; num+=2){
+
         if(a[num] == a[num + 1]){
             newList.push_back(a[num]);
         }
-    }
 
-
-    int counter = 0;
-
-    if(a.size() % 2 != 0){
-        for(int num = 0; num < a.size(); num+=1) {
-            if (a[num] == a[a.size() - 1]) {
-                counter += 1;
+        if(a.size() % 2 != 0){
+            if((a[num] == a[a.size() - 1]) || (a[num + 1] == a[a.size() - 1])){
+                counter+=1;
             }
         }
+
     }
 
-    if ((double)counter / (a.size() - 1) >= .5){
+    if (((double)counter / (a.size()) >= .5) && (a.size() % 2 != 0)){
         newList.push_back(a[a.size() - 1]);
     }
 
     return majority(newList);
-    /* write your code here, based on the detailed explanation of exercise 2.26 */
-    // Using clog for debugging output
-    clog << "Input vector is: ";
-    for (auto& x : a)
-        clog << x << " ";
-    clog << endl;
-    return -1;  // replace this
 }
 
 int main(int argc, char* argv[]) {
@@ -71,7 +63,7 @@ int main(int argc, char* argv[]) {
         clog << "Number of test cases: " << num_test << endl;
         for (int k = 0; k < num_test; k++) {
             inputfile >> num_items_per_test;
-            clog << "Test " << k << " has " << num_test << " data items" << endl;
+            clog << "Test " << k << " has " << num_items_per_test << " data items" << endl;
             testVector.clear();
             for (int m = 0; m < num_items_per_test; m++) {
                 int val;
