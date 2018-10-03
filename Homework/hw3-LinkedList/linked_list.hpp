@@ -54,7 +54,7 @@ namespace gv {
 
             int count = 0;
 
-            shared_ptr<Node> testNode = this->head;
+            auto testNode = this->head;
             while(testNode != nullptr){
                 count+=1;
                 testNode = testNode->next;
@@ -67,9 +67,7 @@ namespace gv {
          * Make the list empty
          */
         void clear() {
-            if(this->head != nullptr){
                 this->head = nullptr;
-            }
         }
 
         /**
@@ -97,9 +95,7 @@ namespace gv {
                 throw length_error("The list is empty");
             }
 
-            if(auto tail = this->tail.lock()){
-                return tail->data;
-            }
+            return this->tail.lock()->data;
 
         };
 
@@ -109,7 +105,7 @@ namespace gv {
          */
         void push_front(const T& x) {
 
-            shared_ptr<Node> newData = make_shared<Node>();
+            auto newData = make_shared<Node>();
             newData->data = x;
 
             if(is_empty()){
@@ -130,7 +126,7 @@ namespace gv {
          */
         void push_back(const T& x) {
 
-            shared_ptr<Node> newData = make_shared<Node>();;
+            auto newData = make_shared<Node>();;
             newData->data = x;
 
             if(is_empty()){
@@ -181,8 +177,8 @@ namespace gv {
             }
 
             int count = 0;
-            shared_ptr<Node> newPoint = make_shared<Node>();
-            shared_ptr<Node> insertPoint = make_shared<Node>();
+            auto newPoint = make_shared<Node>();
+            auto insertPoint = make_shared<Node>();
             newPoint->data = x;
 
             insertPoint = this->head;
@@ -222,8 +218,8 @@ namespace gv {
             }
 
             int count = 0;
-            shared_ptr<Node> insertPoint = make_shared<Node>();
-            shared_ptr<Node> insertPointPrev = make_shared<Node>();
+            auto insertPoint = make_shared<Node>();
+            auto insertPointPrev = make_shared<Node>();
 
             insertPoint = this->head;
 
@@ -262,7 +258,7 @@ namespace gv {
             }
 
             int count = 0;
-            shared_ptr<Node> insertPoint = make_shared<Node>();
+            auto insertPoint = make_shared<Node>();
 
             insertPoint = this->head;
 
