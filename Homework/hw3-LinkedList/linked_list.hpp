@@ -67,7 +67,9 @@ namespace gv {
          * Make the list empty
          */
         void clear() {
-            this->head == nullptr;
+            if(this->head != nullptr){
+                this->head = nullptr;
+            }
         }
 
         /**
@@ -90,6 +92,7 @@ namespace gv {
          * @throw length_error when the list is empty
          */
         const T& back() const {
+
             if(this->head == nullptr){
                 throw length_error("The list is empty");
             }
@@ -116,11 +119,9 @@ namespace gv {
             }
 
             newData->next = this->head;
-            if(auto prev = newData->prev.lock()){
-                prev = nullptr;
-            }
+            this->head->prev = newData;
+            this->head = newData;
 
-            this->head->next = newData;
         }
 
         /**
@@ -142,14 +143,10 @@ namespace gv {
 
             if(auto tail = this->tail.lock()){
                 tail->next = newData;
-
-                if(auto prev = newData->prev.lock()){
-                    prev = tail;
-                }
-
-                tail = newData;
+                newData->prev = tail;
             }
 
+            this->tail = newData;
 
 
 
@@ -173,22 +170,36 @@ namespace gv {
                 throw out_of_range("pos is invalid (negative or larger than list size)");
             }
 
+            if(pos == 0){
+                push_front(x);
+                return;
+            }
+
+            if(pos == size()){
+                push_back(x);
+                return;
+            }
+
             int count = 0;
-            shared_ptr<Node> insertPoint = make_shared<Node>();;
-            Node newNode;
-            newNode.data = x;
+            shared_ptr<Node> newPoint = make_shared<Node>();
+            shared_ptr<Node> insertPoint = make_shared<Node>();
+            newPoint->data = x;
 
             insertPoint = this->head;
 
             while(count != pos){
                 insertPoint = insertPoint->next;
+                count++;
             }
 
-            newNode.next = insertPoint->next;
+            newPoint->next = insertPoint;
 
             if(auto prev = insertPoint->prev.lock()){
-                prev = insertPoint;
+                prev->next = newPoint;
+                newPoint->prev = prev;
             }
+
+            insertPoint->prev = newPoint;
 
         }
 
@@ -211,19 +222,29 @@ namespace gv {
             }
 
             int count = 0;
-            shared_ptr<Node> insertPoint = make_shared<Node>();;
+            shared_ptr<Node> insertPoint = make_shared<Node>();
+            shared_ptr<Node> insertPointPrev = make_shared<Node>();
 
             insertPoint = this->head;
 
             while(count != pos){
+                insertPointPrev = insertPoint;
                 insertPoint = insertPoint->next;
+                count++;
             }
 
-            if(auto prev = insertPoint->prev.lock()){
-                prev->next = insertPoint->next;
-                prev = nullptr;
+            if(pos == 0){
+                this->head = this->head->next;
+                return;
             }
 
+            if(pos == size() - 1){
+                this->tail = insertPointPrev;
+                insertPointPrev->next = nullptr;
+                return;
+            }
+
+            insertPointPrev->next = insertPoint->next;
             insertPoint->next = nullptr;
 
         }
@@ -241,12 +262,13 @@ namespace gv {
             }
 
             int count = 0;
-            shared_ptr<Node> insertPoint = make_shared<Node>();;
+            shared_ptr<Node> insertPoint = make_shared<Node>();
 
             insertPoint = this->head;
 
             while(count != pos){
                 insertPoint = insertPoint->next;
+                count++;
             }
 
             return insertPoint->data;
@@ -262,10 +284,7 @@ namespace gv {
                 throw length_error("The list is empty");
             }
 
-            this->head = this->head->next;
-            if(auto prev = this->head->prev.lock()){
-                prev = nullptr;
-            }
+            remove_from(0);
 
         }
 
@@ -279,12 +298,8 @@ namespace gv {
                 throw length_error("The list is empty");
             }
 
-            if(auto tail = this->tail.lock()){
-                if(auto prev = tail->prev.lock()){
-                    tail = prev;
-                    prev->next = nullptr;
-                }
-            }
+            remove_from(size() - 1);
+
 
         }
         /**

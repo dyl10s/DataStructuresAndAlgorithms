@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/dylan/CLionProjects/DataStructuresAndAlgorithms/Homework/hw3-LinkedList/catch.hpp
+F:/College/DataStructuresAndAlgorithms/Homework/hw3-LinkedList/catch.hpp
 TargetConditionals.h
 -
 ciso646
@@ -260,7 +260,7 @@ string
 memory
 -
 Foundation/Foundation.h
-/home/dylan/CLionProjects/DataStructuresAndAlgorithms/Homework/hw3-LinkedList/Foundation/Foundation.h
+F:/College/DataStructuresAndAlgorithms/Homework/hw3-LinkedList/Foundation/Foundation.h
 algorithm
 -
 random
@@ -440,7 +440,7 @@ algorithm
 cassert
 -
 
-/home/dylan/CLionProjects/DataStructuresAndAlgorithms/Homework/hw3-LinkedList/linked_list.hpp
+F:/College/DataStructuresAndAlgorithms/Homework/hw3-LinkedList/linked_list.hpp
 memory
 -
 stdexcept
@@ -450,9 +450,9 @@ set
 iostream
 -
 
-/home/dylan/CLionProjects/DataStructuresAndAlgorithms/Homework/hw3-LinkedList/list_tester.cpp
+F:/College/DataStructuresAndAlgorithms/Homework/hw3-LinkedList/list_tester.cpp
 catch.hpp
-/home/dylan/CLionProjects/DataStructuresAndAlgorithms/Homework/hw3-LinkedList/catch.hpp
+F:/College/DataStructuresAndAlgorithms/Homework/hw3-LinkedList/catch.hpp
 linked_list.hpp
-/home/dylan/CLionProjects/DataStructuresAndAlgorithms/Homework/hw3-LinkedList/linked_list.hpp
+F:/College/DataStructuresAndAlgorithms/Homework/hw3-LinkedList/linked_list.hpp
 
