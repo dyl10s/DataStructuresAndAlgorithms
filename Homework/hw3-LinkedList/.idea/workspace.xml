@@ -74,9 +74,6 @@
       <change beforePath="$PROJECT_DIR$/../hw02-majority/cmake-build-debug/testdata.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../hw02-majority/cmake-build-debug/testdata.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hw02-majority/hw02-majority.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../hw02-majority/hw02-majority.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hw02-maxvalue/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw02-maxvalue/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HW3.dir/list_tester.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HW3.dir/list_tester.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HW3.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/HW3.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/HW3.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/HW3.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/linked_list.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/linked_list.hpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -114,14 +111,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cpp" value="83" />
-          <entry key="hpp" value="1951" />
+          <entry key="hpp" value="1979" />
           <entry key="txt" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="29" />
-          <entry key="ObjectiveC" value="2034" />
+          <entry key="ObjectiveC" value="2062" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.cidr.testingFrameworks.usages">
@@ -165,8 +162,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/linked_list.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
+            <state relative-caret-position="453">
+              <caret line="319" column="47" selection-start-line="319" selection-start-column="47" selection-end-line="319" selection-end-column="47" />
               <folding>
                 <element signature="e#320#337#0" expanded="true" />
               </folding>
@@ -215,7 +212,11 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>shared</find>
+      <find>shared_ptr&lt;Node&gt;</find>
     </findStrings>
+    <replaceStrings>
+      <replace>auto</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -370,7 +371,7 @@
       <workItem from="1538495752392" duration="2309000" />
       <workItem from="1538498085944" duration="2827000" />
       <workItem from="1538506963448" duration="3355000" />
-      <workItem from="1538515003371" duration="9897000" />
+      <workItem from="1538515003371" duration="10122000" />
     </task>
     <servers />
   </component>
@@ -407,7 +408,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18536000" />
+    <option name="totallyTimeSpent" value="18761000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -547,8 +548,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/linked_list.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
+        <state relative-caret-position="453">
+          <caret line="319" column="47" selection-start-line="319" selection-start-column="47" selection-end-line="319" selection-end-column="47" />
           <folding>
             <element signature="e#320#337#0" expanded="true" />
           </folding>

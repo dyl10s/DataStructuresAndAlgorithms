@@ -1,24 +1,9 @@
 //
-// Created by AngryCarrot on 10/2/2018.
+// Created by Dylan Strohschein
 //
 
-#ifndef HW3_LINKEDLIST_LINKED_LIST_HPP
-#define HW3_LINKEDLIST_LINKED_LIST_HPP
-
-
-class linked_list {
-
-};
-
-
-#endif //HW3_LINKEDLIST_LINKED_LIST_HPP
-
-//
-// Created by Hans Dulimarta
-//
-
-#ifndef LINKEDLISTWITHTEMPLATE_LINKED_LIST_H
-#define LINKEDLISTWITHTEMPLATE_LINKED_LIST_H
+#ifndef LINKEDLISTWITHTEMPLATE_LINKED_LIST_HPP
+#define LINKEDLISTWITHTEMPLATE_LINKED_LIST_HPP
 #include <memory>
 #include <stdexcept>
 #include <set>
@@ -332,4 +317,4 @@ namespace gv {
         };
     };
 };
-#endif //LINKEDLISTWITHTEMPLATE_LINKED_LIST_H
+#endif //LINKEDLISTWITHTEMPLATE_LINKED_LIST_HPP
