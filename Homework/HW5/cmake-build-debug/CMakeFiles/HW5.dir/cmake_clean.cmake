@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/HW5.dir/main.cpp.obj"
+  "CMakeFiles/HW5.dir/hw05_text.cpp.obj"
   "CMakeFiles/HW5.dir/FileSystem.cpp.obj"
   "CMakeFiles/HW5.dir/WordSearch.cpp.obj"
   "HW5.pdb"

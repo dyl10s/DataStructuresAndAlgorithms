@@ -56,18 +56,18 @@ include CMakeFiles/HW5.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/HW5.dir/flags.make
 
-CMakeFiles/HW5.dir/main.cpp.obj: CMakeFiles/HW5.dir/flags.make
-CMakeFiles/HW5.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\College\DataStructuresAndAlgorithms\Homework\HW5\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/HW5.dir/main.cpp.obj"
-	C:\MinGW\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\HW5.dir\main.cpp.obj -c F:\College\DataStructuresAndAlgorithms\Homework\HW5\main.cpp
+CMakeFiles/HW5.dir/hw05_text.cpp.obj: CMakeFiles/HW5.dir/flags.make
+CMakeFiles/HW5.dir/hw05_text.cpp.obj: ../hw05_text.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\College\DataStructuresAndAlgorithms\Homework\HW5\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/HW5.dir/hw05_text.cpp.obj"
+	C:\MinGW\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\HW5.dir\hw05_text.cpp.obj -c F:\College\DataStructuresAndAlgorithms\Homework\HW5\hw05_text.cpp
 
-CMakeFiles/HW5.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HW5.dir/main.cpp.i"
-	C:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\College\DataStructuresAndAlgorithms\Homework\HW5\main.cpp > CMakeFiles\HW5.dir\main.cpp.i
+CMakeFiles/HW5.dir/hw05_text.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HW5.dir/hw05_text.cpp.i"
+	C:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\College\DataStructuresAndAlgorithms\Homework\HW5\hw05_text.cpp > CMakeFiles\HW5.dir\hw05_text.cpp.i
 
-CMakeFiles/HW5.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HW5.dir/main.cpp.s"
-	C:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\College\DataStructuresAndAlgorithms\Homework\HW5\main.cpp -o CMakeFiles\HW5.dir\main.cpp.s
+CMakeFiles/HW5.dir/hw05_text.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HW5.dir/hw05_text.cpp.s"
+	C:\MinGW\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\College\DataStructuresAndAlgorithms\Homework\HW5\hw05_text.cpp -o CMakeFiles\HW5.dir\hw05_text.cpp.s
 
 CMakeFiles/HW5.dir/FileSystem.cpp.obj: CMakeFiles/HW5.dir/flags.make
 CMakeFiles/HW5.dir/FileSystem.cpp.obj: ../FileSystem.cpp
@@ -97,14 +97,14 @@ CMakeFiles/HW5.dir/WordSearch.cpp.s: cmake_force
 
 # Object files for target HW5
 HW5_OBJECTS = \
-"CMakeFiles/HW5.dir/main.cpp.obj" \
+"CMakeFiles/HW5.dir/hw05_text.cpp.obj" \
 "CMakeFiles/HW5.dir/FileSystem.cpp.obj" \
 "CMakeFiles/HW5.dir/WordSearch.cpp.obj"
 
 # External object files for target HW5
 HW5_EXTERNAL_OBJECTS =
 
-HW5.exe: CMakeFiles/HW5.dir/main.cpp.obj
+HW5.exe: CMakeFiles/HW5.dir/hw05_text.cpp.obj
 HW5.exe: CMakeFiles/HW5.dir/FileSystem.cpp.obj
 HW5.exe: CMakeFiles/HW5.dir/WordSearch.cpp.obj
 HW5.exe: CMakeFiles/HW5.dir/build.make

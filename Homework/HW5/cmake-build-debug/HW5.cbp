@@ -17,8 +17,8 @@
 					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;F:/College/DataStructuresAndAlgorithms/Homework/HW5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="HW5">
-				<Option output="F:/College/DataStructuresAndAlgorithms/Homework/HW5/cmake-build-debug/HW5.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="textsearch">
+				<Option output="F:/College/DataStructuresAndAlgorithms/Homework/HW5/cmake-build-debug/textsearch.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="F:/College/DataStructuresAndAlgorithms/Homework/HW5/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -32,14 +32,14 @@
 					<Add directory="C:/MinGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;F:/College/DataStructuresAndAlgorithms/Homework/HW5/cmake-build-debug/Makefile&quot;  VERBOSE=1 HW5"/>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;F:/College/DataStructuresAndAlgorithms/Homework/HW5/cmake-build-debug/Makefile&quot;  VERBOSE=1 textsearch"/>
 					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;F:/College/DataStructuresAndAlgorithms/Homework/HW5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;F:/College/DataStructuresAndAlgorithms/Homework/HW5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;F:/College/DataStructuresAndAlgorithms/Homework/HW5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="HW5/fast">
-				<Option output="F:/College/DataStructuresAndAlgorithms/Homework/HW5/cmake-build-debug/HW5.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="textsearch/fast">
+				<Option output="F:/College/DataStructuresAndAlgorithms/Homework/HW5/cmake-build-debug/textsearch.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="F:/College/DataStructuresAndAlgorithms/Homework/HW5/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -53,7 +53,7 @@
 					<Add directory="C:/MinGW/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;F:/College/DataStructuresAndAlgorithms/Homework/HW5/cmake-build-debug/Makefile&quot;  VERBOSE=1 HW5/fast"/>
+					<Build command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;F:/College/DataStructuresAndAlgorithms/Homework/HW5/cmake-build-debug/Makefile&quot;  VERBOSE=1 textsearch/fast"/>
 					<CompileFile command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;F:/College/DataStructuresAndAlgorithms/Homework/HW5/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;F:/College/DataStructuresAndAlgorithms/Homework/HW5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/MinGW/mingw32/bin/mingw32-make.exe -f &quot;F:/College/DataStructuresAndAlgorithms/Homework/HW5/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -81,19 +81,19 @@
 			</Target>
 		</Build>
 		<Unit filename="F:/College/DataStructuresAndAlgorithms/Homework/HW5/FileSystem.cpp">
-			<Option target="HW5"/>
+			<Option target="textsearch"/>
 		</Unit>
 		<Unit filename="F:/College/DataStructuresAndAlgorithms/Homework/HW5/FileSystem.h">
-			<Option target="HW5"/>
+			<Option target="textsearch"/>
 		</Unit>
 		<Unit filename="F:/College/DataStructuresAndAlgorithms/Homework/HW5/WordSearch.cpp">
-			<Option target="HW5"/>
+			<Option target="textsearch"/>
 		</Unit>
-		<Unit filename="F:/College/DataStructuresAndAlgorithms/Homework/HW5/WordSearch.hpp">
-			<Option target="HW5"/>
+		<Unit filename="F:/College/DataStructuresAndAlgorithms/Homework/HW5/WordSearch.h">
+			<Option target="textsearch"/>
 		</Unit>
-		<Unit filename="F:/College/DataStructuresAndAlgorithms/Homework/HW5/main.cpp">
-			<Option target="HW5"/>
+		<Unit filename="F:/College/DataStructuresAndAlgorithms/Homework/HW5/hw05_text.cpp">
+			<Option target="textsearch"/>
 		</Unit>
 		<Unit filename="F:/College/DataStructuresAndAlgorithms/Homework/HW5/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

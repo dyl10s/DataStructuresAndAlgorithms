@@ -110,17 +110,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named HW5
+# Target rules for targets named textsearch
 
 # Build rule for target.
-HW5: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 HW5
-.PHONY : HW5
+textsearch: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 textsearch
+.PHONY : textsearch
 
 # fast build rule for target.
-HW5/fast:
-	$(MAKE) -f CMakeFiles\HW5.dir\build.make CMakeFiles/HW5.dir/build
-.PHONY : HW5/fast
+textsearch/fast:
+	$(MAKE) -f CMakeFiles\textsearch.dir\build.make CMakeFiles/textsearch.dir/build
+.PHONY : textsearch/fast
 
 FileSystem.obj: FileSystem.cpp.obj
 
@@ -128,7 +128,7 @@ FileSystem.obj: FileSystem.cpp.obj
 
 # target to build an object file
 FileSystem.cpp.obj:
-	$(MAKE) -f CMakeFiles\HW5.dir\build.make CMakeFiles/HW5.dir/FileSystem.cpp.obj
+	$(MAKE) -f CMakeFiles\textsearch.dir\build.make CMakeFiles/textsearch.dir/FileSystem.cpp.obj
 .PHONY : FileSystem.cpp.obj
 
 FileSystem.i: FileSystem.cpp.i
@@ -137,7 +137,7 @@ FileSystem.i: FileSystem.cpp.i
 
 # target to preprocess a source file
 FileSystem.cpp.i:
-	$(MAKE) -f CMakeFiles\HW5.dir\build.make CMakeFiles/HW5.dir/FileSystem.cpp.i
+	$(MAKE) -f CMakeFiles\textsearch.dir\build.make CMakeFiles/textsearch.dir/FileSystem.cpp.i
 .PHONY : FileSystem.cpp.i
 
 FileSystem.s: FileSystem.cpp.s
@@ -146,7 +146,7 @@ FileSystem.s: FileSystem.cpp.s
 
 # target to generate assembly for a file
 FileSystem.cpp.s:
-	$(MAKE) -f CMakeFiles\HW5.dir\build.make CMakeFiles/HW5.dir/FileSystem.cpp.s
+	$(MAKE) -f CMakeFiles\textsearch.dir\build.make CMakeFiles/textsearch.dir/FileSystem.cpp.s
 .PHONY : FileSystem.cpp.s
 
 WordSearch.obj: WordSearch.cpp.obj
@@ -155,7 +155,7 @@ WordSearch.obj: WordSearch.cpp.obj
 
 # target to build an object file
 WordSearch.cpp.obj:
-	$(MAKE) -f CMakeFiles\HW5.dir\build.make CMakeFiles/HW5.dir/WordSearch.cpp.obj
+	$(MAKE) -f CMakeFiles\textsearch.dir\build.make CMakeFiles/textsearch.dir/WordSearch.cpp.obj
 .PHONY : WordSearch.cpp.obj
 
 WordSearch.i: WordSearch.cpp.i
@@ -164,7 +164,7 @@ WordSearch.i: WordSearch.cpp.i
 
 # target to preprocess a source file
 WordSearch.cpp.i:
-	$(MAKE) -f CMakeFiles\HW5.dir\build.make CMakeFiles/HW5.dir/WordSearch.cpp.i
+	$(MAKE) -f CMakeFiles\textsearch.dir\build.make CMakeFiles/textsearch.dir/WordSearch.cpp.i
 .PHONY : WordSearch.cpp.i
 
 WordSearch.s: WordSearch.cpp.s
@@ -173,35 +173,35 @@ WordSearch.s: WordSearch.cpp.s
 
 # target to generate assembly for a file
 WordSearch.cpp.s:
-	$(MAKE) -f CMakeFiles\HW5.dir\build.make CMakeFiles/HW5.dir/WordSearch.cpp.s
+	$(MAKE) -f CMakeFiles\textsearch.dir\build.make CMakeFiles/textsearch.dir/WordSearch.cpp.s
 .PHONY : WordSearch.cpp.s
 
-main.obj: main.cpp.obj
+hw05_text.obj: hw05_text.cpp.obj
 
-.PHONY : main.obj
+.PHONY : hw05_text.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) -f CMakeFiles\HW5.dir\build.make CMakeFiles/HW5.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+hw05_text.cpp.obj:
+	$(MAKE) -f CMakeFiles\textsearch.dir\build.make CMakeFiles/textsearch.dir/hw05_text.cpp.obj
+.PHONY : hw05_text.cpp.obj
 
-main.i: main.cpp.i
+hw05_text.i: hw05_text.cpp.i
 
-.PHONY : main.i
+.PHONY : hw05_text.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles\HW5.dir\build.make CMakeFiles/HW5.dir/main.cpp.i
-.PHONY : main.cpp.i
+hw05_text.cpp.i:
+	$(MAKE) -f CMakeFiles\textsearch.dir\build.make CMakeFiles/textsearch.dir/hw05_text.cpp.i
+.PHONY : hw05_text.cpp.i
 
-main.s: main.cpp.s
+hw05_text.s: hw05_text.cpp.s
 
-.PHONY : main.s
+.PHONY : hw05_text.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles\HW5.dir\build.make CMakeFiles/HW5.dir/main.cpp.s
-.PHONY : main.cpp.s
+hw05_text.cpp.s:
+	$(MAKE) -f CMakeFiles\textsearch.dir\build.make CMakeFiles/textsearch.dir/hw05_text.cpp.s
+.PHONY : hw05_text.cpp.s
 
 # Help Target
 help:
@@ -209,7 +209,7 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... HW5
+	@echo ... textsearch
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... FileSystem.obj
@@ -218,9 +218,9 @@ help:
 	@echo ... WordSearch.obj
 	@echo ... WordSearch.i
 	@echo ... WordSearch.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... hw05_text.obj
+	@echo ... hw05_text.i
+	@echo ... hw05_text.s
 .PHONY : help
 
 

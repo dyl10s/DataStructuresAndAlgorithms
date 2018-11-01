@@ -60,28 +60,40 @@ void WordSearch::read_words(const string &file_name)
         auto re_end = sregex_iterator{};
         for (auto word = re_begin; word != re_end; ++word) {
             /* if the word is in the ignored list, don't print it */
-            if (ignored_words.find(word->str()) == ignored_words.end())
-            {
-                /* TODO: REMOVE the following cout line */
-                cout << "Current word is " << word->str() << endl;
+            if (ignored_words.find(word->str()) == ignored_words.end()) {
+                words[word->str()] = words[word->str()] + 1;
 
-                /* TODO: use the current word to update your data structures */
+                if (prev != "") {
+                    wordsAfter[prev][word->str()] = wordsAfter[prev][word->str()] + 1;
+                }
+
+                prev = word->str();
             }
         }
         line++;
     }
+    wordsAfter[prev][""] = wordsAfter[prev][""] + 1;
     txt.close(); /* close the file */
 }
 
 
 unsigned long WordSearch::word_count() const {
     /* TODO complete this function */
-    return 0;
+    int count = 0;
+    for(auto w : words){
+        count += w.second;
+    }
+    return count;
 }
 
 set<string> WordSearch::words_of_length (int L) const {
     /* TODO complete this function */
-    return set<string>();   /* return an empty set */
+    set<string> wordsOfLength;
+    for(auto w : words){
+        if(w.first.length() == L)
+            wordsOfLength.insert(w.first);
+    }
+    return wordsOfLength;   /* return an empty set */
 }
 
 pair<unsigned int,set<string>> WordSearch::most_frequent_words() const
@@ -89,24 +101,58 @@ pair<unsigned int,set<string>> WordSearch::most_frequent_words() const
 throw (length_error)
 #endif
 {
-    set<string> words;
+    if(words.size() == 0)
+        throw length_error{"There are no words"};
+
+    set<string> freqWords;
+    int highScore = 0;
 
     /* TODO complete this function */
+    for(auto w : words){
+        if(w.second > highScore){
+            highScore = w.second;
+            freqWords.clear();
+            freqWords.insert(w.first);
+        }else if(w.second == highScore){
+            freqWords.insert(w.first);
+        }
+    }
 
-    return make_pair(0, words);
+    return make_pair(highScore, freqWords);
 }
 
 set<string> WordSearch::least_frequent_words(int count) const {
-    set<string> words;
-    /* TODO complete this function */
+
+    if(words.size() == 0)
+        throw length_error{"There are no words"};
+
+    set<string> freqWords;
 
 
-    return words;
+    for(auto w : words){
+        if(w.second <= count){
+            freqWords.insert(w.first);
+        }
+    }
+
+    return freqWords;
 }
 
 string WordSearch::most_probable_word_after(const string& word) const {
 
-    /* TODO complete this function */
 
-    return "";
+    if(words.size() == 0)
+        throw length_error{"There are no words"};
+
+    int highScore = 0;
+    string data;
+
+    for(auto const &n : wordsAfter.at(word)){
+        if(n.second >= highScore){
+            highScore = n.second;
+            data = n.first;
+        }
+    }
+
+    return data;
 }

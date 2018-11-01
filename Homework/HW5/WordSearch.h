@@ -21,7 +21,9 @@ using namespace std;
 class WordSearch {
 private:
     unordered_set<string> ignored_words;
-    /* TODO: declare additional data structures as needed */
+
+    map<string, int> words;
+    map<string, map<string, int>> wordsAfter;
 
     void read_words (const string& file_name);
     void load_ignored_words(const string& file_name);

@@ -3,4 +3,4 @@ project(HW5)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(HW5 hw05_text.cpp FileSystem.cpp FileSystem.h WordSearch.cpp WordSearch.h)
+add_executable(textsearch hw05_text.cpp WordSearch.cpp FileSystem.cpp)

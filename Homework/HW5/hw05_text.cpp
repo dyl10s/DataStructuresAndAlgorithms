@@ -16,15 +16,15 @@
  *   TOP_DIR = "C:/Users/YourName/blah/blah/.....";
  *
  */
-const string TOP_DIR = "C:/Users/Hans Dulimarta/ClionProjects/cs263-homework/HW4/Code";
+const string TOP_DIR = "F:/College/DataStructuresAndAlgorithms/Homework/HW5/";
 
 /* TODO: comment out only one of the following two directive lines
  * to select which dataset to use for testing your program.
  * When PARTIAL_DATASET is defined, you will be using a smaller dataset (10 text files)
  * When PARTIAL_DATASET is undefined, you will be using all the files in the dataset (150+ text files)
  */
-//#undef PARTIAL_DATASET
-#define PARTIAL_DATASET
+#undef PARTIAL_DATASET
+//#define PARTIAL_DATASET
 
 #ifdef PARTIAL_DATASET
 WordSearch gb_lib{TOP_DIR + "/ebooks/partial", TOP_DIR + "/ignored.txt"};

@@ -6,7 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "F:/College/DataStructuresAndAlgorithms/Homework/HW5/FileSystem.cpp" "F:/College/DataStructuresAndAlgorithms/Homework/HW5/cmake-build-debug/CMakeFiles/HW5.dir/FileSystem.cpp.obj"
   "F:/College/DataStructuresAndAlgorithms/Homework/HW5/WordSearch.cpp" "F:/College/DataStructuresAndAlgorithms/Homework/HW5/cmake-build-debug/CMakeFiles/HW5.dir/WordSearch.cpp.obj"
-  "F:/College/DataStructuresAndAlgorithms/Homework/HW5/main.cpp" "F:/College/DataStructuresAndAlgorithms/Homework/HW5/cmake-build-debug/CMakeFiles/HW5.dir/main.cpp.obj"
+  "F:/College/DataStructuresAndAlgorithms/Homework/HW5/hw05_text.cpp" "F:/College/DataStructuresAndAlgorithms/Homework/HW5/cmake-build-debug/CMakeFiles/HW5.dir/hw05_text.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
